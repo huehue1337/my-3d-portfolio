@@ -5,6 +5,7 @@ import CanvasLoader from "../Loader";
 
 const Computers = () => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
+  // console.log(computer)
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
@@ -19,11 +20,29 @@ const Computers = () => {
   );
 };
 
+// const Computers = () => {
+//   const computer = useGLTF("./desktop_pc/scene.gltf");
+//   return (
+//     <mesh>
+//       <HemisphereLight intensity={0.15} groundColor="black" />
+//       <PointLight intensity={1} />
+//       <primitive
+//         object={computer.scene}
+//         scale={0.75}
+//         position={[0, -3.25, -1.5]}
+//         rotation={[-0.01, -0.2, -0.1]}
+//       />
+//     </mesh>
+//   );
+// };
+
+
 const ComputersCanvas = () => {
   return (
     <Canvas
-      frameloop="demand"
+      frameloop='demand'
       shadows
+      dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
@@ -33,12 +52,15 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers />
+        <mesh>
+          <Computers />
+        </mesh>
       </Suspense>
 
       <Preload all />
     </Canvas>
   );
 };
+
 
 export default Computers;
