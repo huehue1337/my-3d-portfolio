@@ -29,8 +29,8 @@ const Navbar = () => {
             className='text-white text-[18px] font-bold cursor-pointer flex'
           >
             Developer sai &nbsp;<span
-            className='sm:block hidden'
-          >| Full Stack Developer</span></p>
+              className='sm:block hidden'
+            >| Full Stack Developer</span></p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((Link) => (
