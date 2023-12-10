@@ -8,8 +8,12 @@ const Computers = () => {
   // console.log(computer)
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
+      <hemisphereLight intensity={0.15} 
+      groundColor="black" />
       <pointLight intensity={1} />
+      <spotLight
+      position={[-20,50,10]}
+      />
       <primitive
         object={computer.scene}
         scale={0.75}
@@ -20,21 +24,6 @@ const Computers = () => {
   );
 };
 
-// const Computers = () => {
-//   const computer = useGLTF("./desktop_pc/scene.gltf");
-//   return (
-//     <mesh>
-//       <HemisphereLight intensity={0.15} groundColor="black" />
-//       <PointLight intensity={1} />
-//       <primitive
-//         object={computer.scene}
-//         scale={0.75}
-//         position={[0, -3.25, -1.5]}
-//         rotation={[-0.01, -0.2, -0.1]}
-//       />
-//     </mesh>
-//   );
-// };
 
 
 const ComputersCanvas = () => {
