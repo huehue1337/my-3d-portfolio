@@ -16,9 +16,11 @@
     "framer-motion": "^10.16.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-motion-animate": "^1.0.6",
     "react-router-dom": "^6.20.1",
     "react-three-fiber": "^6.0.13",
     "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.159.0",
     "three-gltf-loader": "^1.111.0"
   },
