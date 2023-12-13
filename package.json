@@ -5,13 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-<<<<<<< HEAD
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
-=======
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
->>>>>>> parent of 7f6df08 (contace completet gh-pages setup)
+    "build": "vite build"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
